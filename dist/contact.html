@@ -3,7 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="/images/logo.png">
+    <title>contact</title>
 </head>
 <body>
     <div id="content">
@@ -15,11 +19,41 @@
                 <li><a href="./contact.html"> Contact </a> </li>
               </ul>
         </header>
-       <div>
-
+        <div class="contact_section">
+            <div class="container">
+              <h2>Contact Us</h2>
+              <p>Have a question or feedback? We'd love to hear from you!</p>
+              <div class="contact_info">
+                <div class="info_item">
+                  <h4>Location</h4>
+                  <p>123 Fast Street, City, State, ZIP</p>
+                </div>
+                <div class="info_item">
+                  <h4>Phone</h4>
+                  <p>(123) 456_7890</p>
+                </div>
+                <div class="info_item">
+                  <h4>Email</h4>
+                  <p>info@fastbites.com</p>
+                </div>
+              </div>
+              <div class="contact_form">
+                <h4>Send us a message</h4>
+                <form  method="POST">
+                  <input type="text" name="name" placeholder="Your Name" required>
+                  <input type="email" name="email" placeholder="Your Email" required>
+                  <textarea name="message" placeholder="Your Message" required></textarea>
+                  <button type="button" >Send Message</button>
+                </form>
+              </div>
+            </div>
+        </div>
+ 
         <footer>
-            <p>&copy; 2023 The Golden Fork. All rights reserved.</p>
-       </footer>
+            <p>&copy; 2023 The Fast-bites. All rights reserved.</p>
+        </footer>
+    </div>
+
       <script src="main.js"></script>
 
 </body>
