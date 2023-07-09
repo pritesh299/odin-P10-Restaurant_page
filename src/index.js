@@ -1,1 +1,2 @@
-console.log('loll')
+import './index.css';
+console.log('lololoolo')
