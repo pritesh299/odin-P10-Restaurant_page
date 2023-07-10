@@ -24,6 +24,7 @@ header{
     background-color:#242f40;
     color: white;
     padding: 10px;
+    position: sticky;
 }
 
  #headline{
@@ -45,6 +46,7 @@ header{
 a{
     text-decoration: none;
     color: white;
+    cursor: pointer;
 }
 
 a:hover{
@@ -85,7 +87,6 @@ li{
 #menu{
     border: 2px solid black;
     margin: 20px 100px;
-    background-color:#e5e5e5;
     box-shadow: 1px 1px 5px grey;
 }
 
@@ -104,21 +105,20 @@ li{
    justify-content: space-between;
 }
 
-.contact_section{
+#contact{
     padding: 30px 100px;
+    margin-top: 40px;
+
 }
 
-.contact_{
-    margin-top: 40px;
-  }
-  
+
   .contact_h4 {
     font-size: 24px;
     margin-bottom: 15px;
   }
   
-  .contact_form input,
-  .contact_form textarea {
+  #contact_form input,
+  #contact_form textarea {
     width: 100%;
     padding: 10px;
     margin-bottom: 15px;
@@ -126,11 +126,11 @@ li{
     border-radius: 4px;
   }
   
-  .contact_form textarea {
+  #contact_form textarea {
     height: 150px;
   }
   
-  .contact_form button {
+  #contact_form button {
     padding: 10px 20px;
     background-color: #f1545f;
     color: #fff;
@@ -140,7 +140,7 @@ li{
     transition: background-color 0.3s ease;
   }
   
-  .contact_form button:hover {
+  #contact_form button:hover {
     background-color: #d43f4b;
   }
 /* footer*/
