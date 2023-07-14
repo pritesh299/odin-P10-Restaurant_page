@@ -1,147 +1,155 @@
-/* General styles */
+  body{
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    background-size: cover;
+    font-family: 'Josefin Sans', sans-serif;
+}
+h1{
+    text-align: center;
+  }
 
-body {
-  margin: 0;
-  padding: 0;
-  background-color: white;
-  background-size: cover;
-  font-family: 'Josefin Sans', sans-serif;
+  img{
+    width: 400px;
+    padding: 10px;
+    background-color: white;
+    border: 2px solid black;
+ }
+
+
+/* ----header----*/
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color:#242f40;
+    color: white;
+    padding: 10px;
+    position: sticky;
 }
 
-h1 {
-  text-align: center;
+ #headline{
+    display: block;
+    margin: 20px 10px;
+ }
+
+ header>ul{
+    width: 40%;
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    gap: 20px;
+    font-size: 20px;
+ }
+
+a{
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
 }
 
-img {
-  max-width: 100%;
-  height: auto;
-  padding: 10px;
-  background-color: white;
-  border: 2px solid black;
+a:hover{
+    border-bottom: 2px solid white;
 }
 
-/* Header styles */
+/* ----main----*/
 
-header {
-  display: flex;
-  justify-content: space-between;
-  background-color: #242f40;
-  color: white;
-  padding: 10px;
-  position: sticky;
+#about_us{
+    margin: 20px 0;
+    color: white;
+    display: flex;
+    padding: 30px 100px;
 }
 
-#headline {
-  display: block;
-  margin: 20px 10px;
+#about_us_info{
+   background-color: #242f40;
+   padding: 10px 20px;
+   width: 60vw;
+   display: flex;
+   align-items: center;
 }
 
-header > ul {
-  width: 40%;
-  display: flex;
-  list-style: none;
-  justify-content: center;
-  text-align: center;
-  align-items: center;
-  gap: 20px;
-  font-size: 20px;
+
+li{
+    margin:15px 0;
+}
+#featured_dish{
+    padding: 30px 10%;
+    display: flex;
+    justify-content: space-between;
+    gap:20px;
+}
+#featured_dish_text{
+    padding: 10px;
 }
 
-/* Main styles */
-
-main {
-  padding: 0 10px; /* Adjust padding as needed */
+#menu{
+    border: 2px solid black;
+    margin: 20px 100px;
+    box-shadow: 1px 1px 5px grey;
 }
 
-#about_us {
-  margin: 20px 0;
-  color: white;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.price{
+    text-align: center;
+   }
+
+.Left_dish_list , .right_dish_list{
+    padding: 30px 10%;
+    display: flex;
+    gap:20%;
+
+}   
+
+.right_dish_list{
+   justify-content: space-between;
 }
 
-#about_us_info {
-  background-color: #242f40;
-  padding: 10px 20px;
-  width: 100%;
+#contact{
+    padding: 30px 100px;
+    margin-top: 40px;
+
 }
 
-#featured_dish {
-  padding: 30px 10%;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
 
-/* Menu styles */
+  .contact_h4 {
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
 
-#menu {
-  border: 2px solid black;
-  margin: 20px 10px; /* Adjust margin as needed */
-  box-shadow: 1px 1px 5px grey;
-}
+  #contact_form input,
+  #contact_form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
 
-.Left_dish_list,
-.right_dish_list {
-  padding: 30px 10%;
-  display: flex;
-  flex-direction: column;
-  gap: 20%;
-}
+  #contact_form textarea {
+    height: 150px;
+  }
 
-.right_dish_list {
-  justify-content: space-between;
-}
+  #contact_form button {
+    padding: 10px 20px;
+    background-color: #f1545f;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
 
-/* Contact styles */
-
-#contact {
-  padding: 30px 10px; /* Adjust padding as needed */
-  margin-top: 40px;
-}
-
-/* Footer styles */
+  #contact_form button:hover {
+    background-color: #d43f4b;
+  }
+/* footer*/
 
 footer {
-  background-color: rgba(255, 255, 255, 0.878);
-  padding: 20px 0;
-  text-align: center;
-  position: relative;
-  top: 100%;
-}
-
-/* Media queries for responsiveness */
-
-/* iPhone */
-@media only screen and (max-width: 375px) {
-  #about_us_info,
-  #featured_dish {
-    padding: 20px; /* Adjust padding as needed */
+    background-color: rgba(255, 255, 255, 0.878);
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+    top:100%
   }
 
-  .Left_dish_list,
-  .right_dish_list {
-    padding: 20px; /* Adjust padding as needed */
-    gap: 10%; /* Adjust gap as needed */
-  }
-}
-
-/* Android */
-@media only screen and (max-width: 480px) {
-  header > ul {
-    flex-wrap: wrap;
-    justify-content: space-around;
-  }
-
-  #about_us_info,
-  #featured_dish {
-    padding: 20px; /* Adjust padding as needed */
-  }
-
-  .Left_dish_list,
-  .right_dish_list {
-    padding: 20px; /* Adjust padding as needed */
-    gap: 10%; /* Adjust gap as needed */
-  }
-}
